@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<html lang="en">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="animate.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript">
+		$( document ).ready(function() {
+
+			var arrow = $(".flex-item:nth-child(4)")
+    	window.setTimeout(function(){
+        arrow.addClass('bounce');
+    	}, 1000); //<-- Delay in milliseconds
+		});
+  </script>
+	<style type="text/css">
+
+	@media only screen and (max-width: 933px) {
+		/*SALES BANNER */
+		.box-container .flex-item:nth-child(2) img{
+			width: 80% !important;
+		}
+		.box-container{
+			height: auto !important;
+			background-size: cover !important;
+		}
+
+		/*END SALES BANNER */
+	}
+	
+	@media only screen and (max-width: 768px) {
+		/*SALES BANNER */
+		.box-container .flex-item:nth-child(2) img{
+			height: auto !important;
+		}
+		.flex-item button{
+			width: 50% !important;
+		}
+		.flex-item button:nth-child(1),
+		.flex-item button:nth-child(2){
+			margin-right: auto !important;
+			margin-left: auto !important;
+			display: block !important;
+			margin-bottom: 1rem !important;
+		}
+		/*END SALES BANNER */
+	}
+
+	/*SALES BANNER */
+	.box-container{
+		height: 506px;
+		display: flex;
+		flex-wrap: wrap;
+
+	}
+	button{
+		width: 248px !important;
+		height: 43px;
+	}
+	.flex-item{
+		text-align: center;
+		width: 100%;
+		margin-bottom: 1rem;
+	}
+	.flex-item button{
+		float: none;
+	}
+
+	.flex-item button:nth-child(1){
+		margin-right: 1rem;
+	}
+	.flex-item button:nth-child(2){
+		margin-left: 1rem;
+	}
+	/*END SALES BANNER */
+
+	</style>
+	<title>Sales Banner</title>
+</head>
+<body>
+	<div class="col-xs-12 box-container" style="background-color: red;">
+		<h1 class="flex-item">sales 50% discount</h1>
+		<div class="flex-item animated flip">
+			<img src="https://image.ibb.co/femvJw/sales.jpg" height="330px" width="887px">
+		</div>
+		<div class="flex-item">
+			<button class="btn btn-default col-xs-6" type="submit">Button</button><button class="btn btn-default col-xs-6" type="submit">Button</button>
+		</div>
+		<div class="flex-item animated">
+			<img src="https://preview.ibb.co/iOmjBG/down_arrow1600.png" height="43px" width="43px">
+		</div>
+	</div>
+
+</body>
+</html>
